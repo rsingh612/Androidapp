@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="Product Name:"
+            android:layout_width="119dp"
+            android:id="@+id/cartProductName"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_cart_plus"
+            android:id="@+id/cartPlusButton"
+            android:layout_weight="0.00"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cartQuantity"
+            android:textColor="#000000"
+            android:layout_weight="0.03"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_cart_minus"
+            android:id="@+id/cartMinusButton"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/cartProductPrice"
+            android:text="Price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_weight="0.08"
+            android:layout_alignTop="@+id/cartProductQuantity"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:gravity="right|center_vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorDarkGrey"
+        android:layout_weight="0.01"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="2dp" />
+
+</RelativeLayout>

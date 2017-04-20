@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomMenuIcon</item>
+    </style>
+
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!--Modify button color here. -->
+    <style name="Login.Button" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorBabyBlue</item>
+    </style>
+    <!--end -->
+
+    <!--set Spinner text to white. -->
+    <style name="CustomSpinner" parent="AppTheme">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.Drop</item>
+    </style>
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="SpinnerItem.Drop" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <!-- End spinner mod -->
+    <!-- Menu icon mod -->
+    <style name="CustomMenuIcon" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_menu_icon</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">"Lala"</item>
+    </style>
+</resources>

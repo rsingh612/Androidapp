@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="65dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/orderListviewDate"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textColorHighlight="@color/colorBlack"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/orderListviewStatus"
+            android:layout_weight="1.00"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorSeperator"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="false"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true" />
+</LinearLayout>
